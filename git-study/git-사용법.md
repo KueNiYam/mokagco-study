@@ -12,8 +12,10 @@
 ## 작업의 흐름
 첫번째 나무, 작업 디렉토리(Working directory)
  - 실제 파일들로 이루어져 있다.
+ 
 두번째 나무, 인덱스(Index)
  - 준비 영역(staging aread)의 역할을 한다.
+ 
 마지막 나무, HEAD
  - 최종 확정본(commit)를 나타낸다.
 
@@ -32,7 +34,7 @@
 가지는 안전하게 격리된 상태에서 무언가를 만들 때 사용한다.
 
 	git checkout -b feature_x		# 가지 생성
-	git checkout master				# master 가지로 돌아옴
+	git checkout master			# master 가지로 돌아옴
 	git brach -d feature_x			# 가지 삭제
 	git push origin <가지 이름>		# 새로 만든 가지를 원격 저장소로 전송
 
@@ -40,13 +42,13 @@
 
 ## 갱신과 병합(merge)
 
-	git pull						# 로컬 저장소를 원격 저장소에 맞춰 갱신
+	git pull				# 로컬 저장소를 원격 저장소에 맞춰 갱신
 
 이렇게 하면 원격 저장소의 변경 내용이 로컬 작업 디렉토리에 받아지고(fetch), 병합(merge)된다.
 
 	git merge <가지 이름>			# 다른 가지에 있는 변경 내용을 현재 가지에 병합
 	git add <파일 이름>
-	git diff <원래 가지> <비교 대상 가지> # 변경 전 내용 비교
+	git diff <원래 가지> <비교 대상 가지> 	# 변경 전 내용 비교
 
 ## 꼬리표(tag) 달기
 스프트웨어의 새 버전을 발표할 때 마다 꼬리표를 달아놓으면 좋다.
