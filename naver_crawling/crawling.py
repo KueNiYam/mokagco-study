@@ -37,7 +37,6 @@ def get_relateds(href):
     return [keyword.get_text() for keyword in keywords]
 
 def print_json(total):
-    print(len(total))
     for i, v in enumerate(total['rank']):
         print(total['rank'][i], total['word'][i])
         print(total['related'][i])
