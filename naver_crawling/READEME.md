@@ -2,4 +2,5 @@
 
 ## 예시
 
-![image](./image.jpg)
+![image](./image1.jpg)
+![image](./image2.jpg)
